@@ -7,8 +7,6 @@
 
 # 👋 OpenManus
 
-[官方网站](https://openmanus.github.io/)
-
 Manus 非常棒，但 OpenManus 无需邀请码即可实现任何创意 🛫！
 
 我们的团队成员 [@mannaandpoem](https://github.com/mannaandpoem) [@XiangJinyu](https://github.com/XiangJinyu) [@MoshiQAQ](https://github.com/MoshiQAQ) [@didiforgithub](https://github.com/didiforgithub) https://github.com/stellaHSR 来自 [@MetaGPT](https://github.com/geekan/MetaGPT) 组织，我们在 3
@@ -130,10 +128,6 @@ python run_flow.py
 
 或通过 📧 邮件联系 @mannaandpoem：mannaandpoem@gmail.com
 
-## 发展路线
-
-- [ ] 提高用户界面的视觉吸引力，以创建更直观和无缝的用户体验。
-
 ## 交流群
 
 加入我们的飞书交流群，与其他开发者分享经验！
@@ -150,5 +144,7 @@ python run_flow.py
 
 特别感谢 [anthropic-computer-use](https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo)
 和 [browser-use](https://github.com/browser-use/browser-use) 为本项目提供的基础支持！
+
+此外，我们感谢 [AAAJ](https://github.com/metauto-ai/agent-as-a-judge)，[MetaGPT](https://github.com/geekan/MetaGPT) 和 [OpenHands](https://github.com/All-Hands-AI/OpenHands).
 
 OpenManus 由 MetaGPT 社区的贡献者共同构建，感谢这个充满活力的智能体开发者社区！
