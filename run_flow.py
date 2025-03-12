@@ -14,9 +14,10 @@ async def run_flow():
 
     while True:
         try:
-            prompt = input("Enter your prompt (or 'exit' to quit): ")
-            if prompt.lower() == "exit":
-                logger.info("Goodbye!")
+            prompt = input("Enter your prompt (or 'exit'/'quit'/'q' to quit): ")
+            prompt_lower = prompt.lower()
+            if prompt_lower in ["exit", "quit", "q"]:
+                print("Goodbye!")
                 break
 
             flow = FlowFactory.create_flow(

@@ -8,9 +8,9 @@ async def main():
     agent = Manus()
     while True:
         try:
-            prompt = input("Enter your prompt (or 'exit'/'quit' to quit): ")
+            prompt = input("Enter your prompt (or 'exit'/'quit'/'q' to quit): ")
             prompt_lower = prompt.lower()
-            if prompt_lower in ["exit", "quit"]:
+            if prompt_lower in ["exit", "quit", "q"]:
                 logger.info("Goodbye!")
                 break
             if not prompt.strip():
