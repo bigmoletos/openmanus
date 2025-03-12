@@ -23,6 +23,7 @@ class LLMSettings(BaseModel):
     temperature: float = Field(1.0, description="Sampling temperature")
     api_type: str = Field(..., description="AzureOpenai or Openai")
     api_version: str = Field(..., description="Azure Openai version if AzureOpenai")
+    timeout: int = Field(60, description="API request timeout")
 
 
 class AppConfig(BaseModel):
@@ -80,6 +81,7 @@ class Config:
             "temperature": base_llm.get("temperature", 1.0),
             "api_type": base_llm.get("api_type", ""),
             "api_version": base_llm.get("api_version", ""),
+            "timeout": base_llm.get("timeout", 60),
         }
 
         config_dict = {
