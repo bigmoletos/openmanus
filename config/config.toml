@@ -1,0 +1,55 @@
+# Global LLM configuration
+[llm]
+model = "claude-3-5-sonnet"
+base_url = "https://api.openai.com/v1"
+api_key = "${OPENAI_API_KEY}"
+max_tokens = 4096
+temperature = 0.0
+
+# [llm] #AZURE OPENAI:
+# api_type= 'azure'
+# model = "YOUR_MODEL_NAME" #"gpt-4o-mini"
+# base_url = "${AZURE_ENDPOINT.rstrip('/')}/openai/deployments/${AZURE_DEPLOYMENT_ID}"
+# api_key = "${AZURE_API_KEY}"
+# max_tokens = 8096
+# temperature = 0.0
+# api_version="${AZURE_API_VERSION}" #"2024-08-01-preview"
+
+# Optional configuration for specific LLM models
+[llm.vision]
+model = "claude-3-5-sonnet"
+base_url = "https://api.openai.com/v1"
+api_key = "${OPENAI_API_KEY}"
+
+# Configuration pour Anthropic Claude
+[llm.claude]
+model = "claude-3-opus-20240229"
+base_url = "https://api.anthropic.com/v1"
+api_key = "${CLAUDE_API_KEY}"
+max_tokens = 4096
+temperature = 0.0
+
+# Configuration pour Mistral AI
+[llm.mistral]
+model = "mistral-large-latest"
+base_url = "https://api.mistral.ai/v1"
+api_key = "${MISTRAL_API_KEY}"
+max_tokens = 4096
+temperature = 0.0
+
+# Configuration AWS
+[aws]
+api_key = "${AMAZON_API_KEY}"
+api_secret = "${AMAZON_API_SECRET}"
+region = "${AMAZON_REGION}"
+
+# Configuration OVH
+[ovh]
+api_key = "${OVH_API_KEY}"
+app_secret = "${OVH_APP_SECRET}"
+consumer_key = "${OVH_CONSUMER_KEY}"
+
+# Configuration Fluke
+[fluke]
+api_key = "${FLUKE_API_KEY}"
+api_url = "${FLUKE_API_URL}"
